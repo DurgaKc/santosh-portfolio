@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Karma:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+/* ── Custom dark-mode variant ── */
+@custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
+
+/* ── Spiritual Design Tokens ── */
+@theme {
+  --font-heading: 'Karma', serif;
+  --font-body: 'Outfit', sans-serif;
+
+  /* Traditional Colors */
+  --color-saffron: #FF9933;
+  --color-saffron-dark: #cc7a29;
+  --color-maroon: #800000;
+  --color-gold: #D4AF37;
+  --color-gold-light: #F9E2AF;
+  --color-cream: #FFF9E3;
+  --color-yellow-light: #FFFDE1;
+
+  /* UI Tokens */
+  --color-bg: #FFF9E3;
+  --color-surface: #ffffff;
+  --color-border: #D4AF37;
+  --color-text-main: #2D1A12;
+  --color-text-muted: #5C4033;
+
+  /* Custom Animations */
+  --animate-float: float 4s ease-in-out infinite;
+  --animate-glow: glow 2s ease-in-out infinite;
+  --animate-fade-in: fadeIn 1s ease-out;
+}
+
+/* ── Keyframes ── */
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes glow {
+  0%, 100% { filter: drop-shadow(0 0 5px rgba(212, 175, 55, 0.5)); }
+  50% { filter: drop-shadow(0 0 15px rgba(212, 175, 55, 0.8)); }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ── Base Layer ── */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: var(--font-body);
+    background-color: var(--color-bg);
+    color: var(--color-text-main);
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+    font-weight: 600;
+  }
+
+  ::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: var(--color-cream);
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: var(--color-saffron);
+    border-radius: 99px;
+  }
+
+  ::selection {
+    background: var(--color-saffron);
+    color: white;
+  }
+}
+
+/* ── Traditional Utilities ── */
+@layer utilities {
+  .text-saffron { color: var(--color-saffron); }
+  .text-gold { color: var(--color-gold); }
+  .bg-saffron { background-color: var(--color-saffron); }
+  .bg-maroon { background-color: var(--color-maroon); }
+  
+  .ornamental-border {
+    position: relative;
+    border: 2px solid var(--color-gold);
+    padding: 2rem;
+  }
+
+  .ornamental-border::before,
+  .ornamental-border::after {
+    content: "ॐ";
+    position: absolute;
+    background: var(--color-bg);
+    padding: 0 10px;
+    color: var(--color-gold);
+    font-family: var(--font-heading);
+  }
+
+  .ornamental-border::before { top: -15px; left: 50%; transform: translateX(-50%); }
+  .ornamental-border::after { bottom: -15px; left: 50%; transform: translateX(-50%); }
+
+  .spiritual-gradient {
+    background: linear-gradient(135deg, #FF9933, #800000);
+  }
+
+  .gold-shimmer {
+    background: linear-gradient(90deg, #D4AF37 0%, #F9E2AF 50%, #D4AF37 100%);
+    background-size: 200% auto;
+    animation: shimmer 3s linear infinite;
+  }
+
+  @keyframes shimmer {
+    0% { background-position: 100% 0; }
+    100% { background-position: -100% 0; }
+  }
+
+  .temple-shadow {
+    box-shadow: 0 10px 30px rgba(128, 0, 0, 0.1);
+  }
+
+  .glass-spiritual {
+    background: rgba(255, 249, 227, 0.7);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(212, 175, 55, 0.3);
+  }
+}
