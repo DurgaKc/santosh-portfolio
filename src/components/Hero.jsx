@@ -37,7 +37,7 @@ export default function Hero() {
         >
           ॥ हरिः ॐ खं ब्रह्म ॥
           <br />
-          संस्कार ज्योतिष सदन
+          संस्कार ज्योतिष घर
         </motion.h1>
 
         <motion.p
