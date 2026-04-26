@@ -26,7 +26,7 @@ const rituals = [
     description: "चौरासी वर्ष पुगेपछि दीर्घायु र आशीर्वादको कामना गर्दै गरिने भव्य धार्मिक अनुष्ठान ।",
     descriptionEn: "A grand celebration and ritual performed when one reaches the age of 84, seeking divine blessings for longevity.",
     icon: <FaOm className="text-4xl text-saffron" />,
-    image: "/bratabandha2.jpeg"
+    image: "/chaurashipuja1.jpeg"
   },
   {
     title: "पास्नी",

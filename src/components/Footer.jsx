@@ -38,7 +38,7 @@ export default function Footer() {
                             <a href="https://www.tiktok.com/@sanskarjyotishhouse?_r=1&_t=ZS-95bWFIzT6lb" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-saffron transition-colors">
                                 <FaTiktok />
                             </a>
-                            <a href="https://wa.me/9779843789367" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-saffron transition-colors">
+                            <a href="https://wa.me/9779806281720" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-saffron transition-colors">
                                 <FaWhatsapp />
                             </a>
                         </div>
@@ -85,7 +85,7 @@ export default function Footer() {
                             </div>
                             <div className="flex items-start gap-4 text-sm text-white/70">
                                 <FaPhoneAlt className="text-saffron mt-1" />
-                                <span>+977 9843789367</span>
+                                <span>+977 9806281720</span>
                             </div>
                             <div className="flex items-start gap-4 text-sm text-white/70">
                                 <FaEnvelope className="text-saffron mt-1" />

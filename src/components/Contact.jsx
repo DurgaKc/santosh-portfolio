@@ -19,8 +19,8 @@ const contactInfo = [
   {
     icon: <FaPhoneAlt className="text-saffron" />,
     label: "Phone",
-    value: "+977 9843789367",
-    href: "tel:+9779843789367",
+    value: "+977 9806281720",
+    href: "tel:+9779806281720",
   },
   {
     icon: <FaMapMarkerAlt className="text-saffron" />,
@@ -174,7 +174,7 @@ export default function Contact() {
               <div className="flex items-center gap-4">
                 <FaWhatsapp className="text-2xl text-[#25D366]" />
                 <a
-                  href="https://wa.me/9843789367"
+                  href="https://wa.me/9806281720"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="font-bold hover:underline"

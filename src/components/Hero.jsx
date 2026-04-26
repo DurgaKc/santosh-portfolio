@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { Link } from "react-scroll";
 import { FaArrowRight } from "react-icons/fa";
-import heroBg from "../assets/hero-bg.png";
+import me from '../assets/me.jpeg';
 
 export default function Hero() {
   return (
@@ -12,7 +12,7 @@ export default function Hero() {
       {/* Background Image with Overlay */}
       <div 
         className="absolute inset-0 z-0 bg-cover bg-center bg-no-repeat transition-transform duration-1000 scale-105"
-        style={{ backgroundImage: `url(${heroBg})` }}
+        style={{ backgroundImage: `url(${me})` }}
       />
       <div className="absolute inset-0 z-1 bg-gradient-to-b from-maroon/60 via-maroon/40 to-cream/100" />
 

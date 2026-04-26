@@ -6,25 +6,26 @@ import { FaOm, FaChevronLeft, FaChevronRight } from "react-icons/fa";
 const galleryCategories = [
   {
     id: 1,
-    title: "हवन अनुष्ठान",
-    titleEn: "Sacred Havan Ritual",
-    category: "पूजा",
-    categoryEn: "Puja",
-    description: "पवित्र अग्निकुण्डमा आहुति दिँदै वैदिक मन्त्रोच्चारण",
+     title: "गृह प्रवेश",
+    titleEn: "Griha Pravesh",
+    category: "गृह प्रवेश",
+    categoryEn: "Samskara",
+    description: "नयाँ घरमा प्रवेश गर्दा गरिने वैदिक विधि - गणेश पूजा, वास्तु शान्ति र हवन",
     images: [
-      "/hawanpuja1.jpeg",
-      "/hawanpuja2.jpeg",
-      "/hawanpuja3.jpeg",
+      "/gharprabesh1.jpeg",
+      "/gharprabesh2.jpeg",
     ]
+    
   },
   {
     id: 2,
-    title: "मन्दिर दर्शन",
+    title: "हवन ",
     titleEn: "Temple Ceremony",
-    category: "मन्दिर",
+    category: "हवन अनुष्ठान",
     categoryEn: "Temple",
     description: "भगवानको दर्शन र विशेष पूजा आराधनाको पवित्र क्षणहरू",
     images: [
+      "/temple2.jpeg",
       "/temple1.jpeg"
     ]
   },
@@ -36,7 +37,7 @@ const galleryCategories = [
     categoryEn: "Puja",
     description: "ग्रह शान्ति र कुण्डली दोष निवारणको लागि एक लाख दीप प्रज्वलन",
     images: [
-      "/lakhbatti1.jpeg",
+      "/lakhbatti3.jpeg",
       "/lakhbatti2.jpeg",
     ]
   },
@@ -50,6 +51,7 @@ const galleryCategories = [
     images: [
       "/wedding1.jpeg",
       "/wedding2.jpeg",
+      "/wedding3.jpeg",
     ]
   },
   {
@@ -66,9 +68,9 @@ const galleryCategories = [
   },
   {
     id: 6,
-    title: "भूमि पूजा",
+    title: "शिलान्यास",
     titleEn: "Bhumi Puja",
-    category: "पूजा",
+    category: "शिलान्यास",
     categoryEn: "Puja",
     description: "नयाँ भवन निर्माण पूर्व भूमिको पूजा र वास्तु शान्तिको लागि वैदिक अनुष्ठान",
     images: [
@@ -77,13 +79,16 @@ const galleryCategories = [
   },
   {
     id: 7,
-    title: "गृह प्रवेश",
-    titleEn: "Griha Pravesh",
-    category: "गृह प्रवेश",
-    categoryEn: "Samskara",
-    description: "नयाँ घरमा प्रवेश गर्दा गरिने वैदिक विधि - गणेश पूजा, वास्तु शान्ति र हवन",
+    title: "चौरासी पूजा",
+    titleEn: "Sacred Havan Ritual",
+    category: "चौरासी पूजा",
+    categoryEn: "Puja",
+    description: "पवित्र अग्निकुण्डमा आहुति दिँदै वैदिक मन्त्रोच्चारण",
     images: [
-      "/gharprabesh1.jpeg",
+      "/chaurashipuja1.jpeg",
+      "/chaurashipuja2.jpeg",
+  
+     
     ]
   },
   {
